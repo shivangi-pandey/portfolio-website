@@ -1,1 +1,1 @@
-# portfolio-website
+I have made this portfolio website using HTML,CSS and a little bit of bootstrap as front-end technology and PHP as back-end technology and it also accept the user input and make the exact clone web page with the provided information.
