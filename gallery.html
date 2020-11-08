@@ -1,0 +1,99 @@
+<style>
+*{
+	box-sizing: border-box;
+	margin: 0;
+	padding: 0;
+}
+body{
+	height: 100vh;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	background:grb(25,12,41);
+}
+.slider{
+position:relative;
+width: 60%;
+overflow: hidden;
+}
+.images{
+display: flex;
+width :100%
+}
+.images img{
+	height: 400px;
+	width: 100%;
+	transition: all 0.15s ease;
+}
+.images input{
+display: none;
+}
+.dots{
+display: flex;
+justify-content: center;
+margin: 5px;
+}
+.dots label{
+height: 20px;
+width: 20px;
+border-radius:50%;
+border: solid crimson 3px;
+cursor: pointer;
+transition: all 0.15s ease;
+margin: 5px;
+}
+.dots label:hover{background: crimson;}
+
+#img-8:checked ~ .m8{
+	margin-left: 0%;
+}
+#img-9:checked ~ .m9{
+	margin-left: -100%
+}
+#img-11:checked ~ .m11{
+	margin-left: -200%;
+}
+#img-12:checked ~ .m12{
+	margin-left: -300%;
+}
+#img-13:checked ~ .m13{
+	margin-left: -400%;
+</style>
+<html>
+<head>
+
+</head>
+
+<body>
+
+
+<div class="slider">
+	<div class="images">
+		
+		<input type="radio" name="slide" id="img-8" checked>
+		<input type="radio" name="slide" id="img-9" checked>
+		
+		<input type="radio" name="slide" id="img-11" checked>
+		<input type="radio" name="slide" id="img-12" checked>
+		<input type="radio" name="slide" id="img-13" checked>
+
+		
+		<img src="./img/img-8.jpg" class="m8" alt="img-8">
+		<img src="./img/img-9.jpg" class="m9" alt="img-9">
+		
+		<img src="./img/img-11.jpg" class="m11" alt="img-11">
+		<img src="./img/img-12.jpg" class="m12" alt="img-12">
+		<img src="./img/img-13.jpg" class="m13" alt="img-13">
+</div>
+<div class="dots">
+<label for="img-8"></label>
+<label for="img-9"></label>
+
+<label for="img-11"></label>
+<label for="img-12"></label>
+<label for="img-13"></label>
+</div>
+</div>
+
+</body>
+</html>

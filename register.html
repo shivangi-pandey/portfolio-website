@@ -1,0 +1,162 @@
+
+
+
+
+
+<!DOCTYPE html>  
+<html>  
+<head>  
+<meta name="viewport" content="width=device-width, initial-scale=1">  
+<style>  
+body{  
+  font-family: Calibri, Helvetica, sans-serif;  
+  background-color: crimson;  
+}  
+.container {  
+    padding: 50px;  
+  background-color: white;  
+}  
+  
+input[type=text], input[type=password], textarea {  
+  width: 100%;  
+  padding: 15px;  
+  margin: 5px 0 22px 0;  
+  display: inline-block;  
+  border: none;  
+  background: #f1f1f1;  
+}  
+input[type=text]:focus, input[type=password]:focus {  
+  background-color: orange;  
+  outline: none;  
+}  
+ div {  
+            padding: 10px 0;  
+         }  
+hr {  
+  border: 1px solid #f1f1f1;  
+  margin-bottom: 25px;  
+}  
+.registerbtn {  
+  background-color: #4CAF50;  
+  color: white;  
+  padding: 16px 20px;  
+  margin: 8px 0;  
+  border: none;  
+  cursor: pointer;  
+  width: 100%;  
+  opacity: 0.9;  
+}  
+.registerbtn:hover {  
+  opacity: 1;  
+}  
+</style>  
+</head>  
+<body>  
+<form method="post" action="insert.php" enctype="multipart/form-data">  
+  <div class="container">  
+  <center>  <h1> FILL YOUR INFORMATION</h1> </center>  
+  <hr>  
+  <label for="yourname"><b>YOUR NAME</b> </label>   
+<input type="text" name="yourname" placeholder= "yourname" size="30" required />   
+<div>
+
+<div>
+<label for="address"><b>About me:</label>
+<textarea id="aboutme" name="aboutme" rows="4" cols="50">
+</textarea>
+</div>
+
+<div>
+<label for="photo"><b>Upload Image:</b></label>
+<input type="photo" name="size" value="1000000">
+<input type="file" name="image">
+</div>
+<div>
+<input type="submit" name="upload" value="upload image">
+</div>
+
+<div>
+<center><label>   
+<h1>EDUCATION:</h1>  
+</label> </center> 
+
+
+<label for="postgraduation">   
+<b>Postgraduation:</b>
+</label> 
+<textarea id="postgraduation" name="postgraduation" rows="4" cols="50">    
+</textarea> 
+<label for="graduation"><b>Graduation:</b></label>
+<textarea id="graduation" name="graduation" rows="4" cols="50">  
+</textarea>
+<label for="school"><b>School:</b></label>     
+<textarea id="school" name="school" rows="4" cols="50">  
+</textarea>
+
+</div>
+  
+
+<label for="skill1">   
+<b>skill1</b>
+</label> 
+<textarea id="skill1" name="skill1" rows="4" cols="50">    
+</textarea> 
+<label for="skill2"><b>skill2</b></label>
+<textarea id="skill2" name="skill2" rows="4" cols="50">  
+</textarea>
+<label for="skill3"><b>Skill3</b></label>     
+<textarea id="skill3" name="skill3" rows="4" cols="50">  
+</textarea>
+<label for="skill4"><b>Skill4</b></label>     
+<textarea id="skill4" name="skill4" rows="4" cols="50">  
+</textarea>
+<label for="skill5"><b>Skill5</b></label>     
+<textarea id="skill5" name="skill5" rows="4" cols="50">  
+</textarea>
+
+</div>
+
+
+
+
+<div>
+<center><label>   
+<h1>PROJECTS:</h1>
+</label> </center> 
+
+
+<label for="project1"><b>Project1:</b></label>     
+<textarea id="project1" name="project1" rows="4" cols="50">  
+</textarea> 
+<label for="project2"><b>Project2:</b></label>
+<textarea id="project2" name="project2" rows="4" cols="50">  
+</textarea>
+</div>
+
+
+
+
+
+
+
+
+<div>
+  <center>  <h1> CONTACT INFORMATION</h1> </center>
+
+<label for="phone"><b>Phone: </b></label>   
+<input type="text" name="phone" placeholder="phone no." size="10"/ required>   
+
+
+<label for="address"><b>Address:</label>
+<textarea id="address" name="address" rows="4" cols="50">
+  
+  </textarea>
+ 
+ <label for="email"><b>Email</b></label>  
+ <input type="text" placeholder="Enter Email" name="email" required>  
+  
+    
+    <button type="submit" name="save" value"save" class="registerbtn" ><a action="insert.html">Click Here</a></button>    
+</form>  
+</body> 
+</html>  
